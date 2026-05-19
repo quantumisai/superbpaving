@@ -254,6 +254,62 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-
 .page-hero .crumbs::before{content:"";display:inline-block;width:24px;height:1px;background:var(--bronze)}
 
 /* ============================================================
+   Trust strip — 5-star rated, satisfaction guaranteed, etc.
+   Sits between the hero and the next section on every page.
+   ============================================================ */
+.trust-strip{
+  background:var(--paper);
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  padding:28px 0;
+}
+.trust-row{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:24px;align-items:center;
+}
+.trust-item{
+  display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;
+  padding:0 12px;
+}
+.trust-item + .trust-item{border-left:1px solid var(--rule)}
+.trust-stars{
+  font-size:22px;color:var(--bronze);letter-spacing:.1em;line-height:1;
+}
+.trust-mark{
+  font-family:var(--serif);font-style:italic;font-size:26px;
+  color:var(--bronze);line-height:1;font-weight:300;
+}
+.trust-label{
+  font-family:var(--sans);font-size:11px;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink);font-weight:500;
+}
+.trust-label strong{color:var(--ink);font-weight:600}
+@media (max-width:780px){
+  .trust-row{grid-template-columns:1fr 1fr;gap:24px 8px}
+  .trust-item + .trust-item{border-left:none}
+  .trust-item:nth-child(3),.trust-item:nth-child(4){border-top:1px solid var(--rule);padding-top:24px}
+  .trust-stars{font-size:18px}
+  .trust-mark{font-size:22px}
+  .trust-label{font-size:10px;letter-spacing:.16em}
+}
+
+/* Satisfaction guarantee callout — pill chip for hero/CTA reinforcement */
+.guarantee-callout{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:10px 18px;border:1px solid rgba(232,201,155,.45);border-radius:999px;
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;
+  color:#E8C99B;
+  margin-bottom:24px;
+  background:rgba(232,201,155,.06);
+}
+.guarantee-callout .check{
+  width:16px;height:16px;border-radius:50%;
+  background:#E8C99B;color:var(--ink);
+  display:inline-grid;place-items:center;font-size:10px;font-weight:700;
+}
+
+/* ============================================================
    Values band
    ============================================================ */
 .values{background:var(--ink);color:var(--bone);padding:96px 0}
