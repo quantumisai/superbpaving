@@ -24,6 +24,9 @@ Static HTML website. No build step. Deployable as-is from the repo root.
 ├── robots.txt         Crawler config
 ├── llms.txt           AI search optimization (ChatGPT, Perplexity, AI Overviews)
 ├── verify.py          Invariant check — run after any content edit
+├── CHANGELOG.md       What shipped in each release
+├── TODOS.md           Known issues and deferred work, with priority
+├── VERSION            Current release number
 ├── img/               Photography
 └── docs/
     ├── DESIGN-REPORT.md   Design review findings + fixes
@@ -74,8 +77,10 @@ python3 verify.py
 ```
 
 It fails if the phone, email, address, service area, or JSON-LD drift between
-pages, if a title or meta description breaks its SERP length limit, or if any
-image or stylesheet reference points at a file that isn't there. No
+pages, if a title or meta description breaks its SERP length limit, if any
+image or stylesheet reference points at a file that isn't there, or if copy
+from the business's previous market reappears anywhere outside `CHANGELOG.md`
+and `TODOS.md`, which are exempt because they are the record of the move. No
 dependencies — it only needs Python 3.
 
 ## Design system
@@ -88,7 +93,7 @@ CSS custom properties at the top of `styles.css` drive the entire palette and ty
 
 ## Next steps after going live
 
-Two things only the business owner can do (see `docs/SEO-REPORT.md` for full detail):
+Three things only the business owner can do (see `docs/SEO-REPORT.md` for full detail):
 
 1. **Claim Google Business Profile** at https://business.google.com — this is what gets you in the local map pack.
 2. **Build citations** (Yelp, Angi, BBB, Houzz, Nextdoor, Apple Maps) with NAP that matches the site exactly.
