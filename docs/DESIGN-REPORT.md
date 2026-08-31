@@ -102,7 +102,7 @@ Zero across all 5 pages.
 
 1. Add `<link rel="preload">` for the hero image on index.html for LCP improvement
 2. Add `loading="lazy"` to portfolio gallery images below the fold
-3. Consider a real `favicon.ico` (currently default)
+3. Add a `favicon.ico` fallback for browsers that ignore SVG icons (`favicon.svg` and `apple-touch-icon.png` are both linked on every page)
 4. Add an `og:image` with text overlay for social sharing
 5. The portfolio "References available on request" callout could link to a `mailto:` directly
 
@@ -113,3 +113,5 @@ Zero across all 5 pages.
 Ship it.
 
 Five pages, all green on console, all responsive down to 390px, real photography, real copy, and a design system tight enough that the client can extend it themselves without a rebuild. The hero "Paving and masonry, built to last." is doing the job a high-end paving site needs to do: signal craft before content.
+
+**Correction (added later):** the 390px pass missed horizontal overflow on `index.html` and `about.html`, and ticker wrapping between 680px and ~1100px. Both are measured and recorded in `TODOS.md`.
