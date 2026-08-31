@@ -3,7 +3,7 @@
 **Date:** 2026-05-19
 **Site:** Superb Paving & Masonry (local: http://localhost:8765/)
 **Industry detected:** Local Service Business (paving and masonry contractor)
-**Target market:** Stafford, VA + Northern Virginia
+**Target market:** Chicago, IL + surrounding suburbs
 
 ---
 
@@ -37,13 +37,17 @@ For a local business, this is the single biggest SEO lever. A paving contractor 
 
 ### HIGH — Title tags rewritten for local SEO intent
 
+> Note: the business relocated to Chicago, IL in August 2026. Every
+> recommendation below has been updated to the current market; the
+> original audit was performed against the previous location.
+
 | Page | Before | After |
 |------|--------|-------|
-| Home | `Superb Paving & Masonry — Stafford, Virginia` | **Paving & Masonry Contractor in Stafford, VA \| Superb Paving** |
-| Services | `Services — Superb Paving & Masonry` | **Paving & Masonry Services in Stafford, VA \| Driveways, Patios, Walls** |
-| Portfolio | `Portfolio — Superb Paving & Masonry` | **Paving & Masonry Portfolio \| Recent Projects in Northern VA** |
-| About | `About — Superb Paving & Masonry` | **About Superb Paving & Masonry \| Stafford, VA Contractor** |
-| Contact | `Contact — Superb Paving & Masonry` | **Get a Free Estimate \| (703) 499-2258 \| Superb Paving, Stafford VA** |
+| Home | `Superb Paving & Masonry` | **Paving & Masonry Contractor in Chicago, IL \| Superb Paving** |
+| Services | `Services — Superb Paving & Masonry` | **Paving & Masonry Services in Chicago, IL \| Superb Paving** |
+| Portfolio | `Portfolio — Superb Paving & Masonry` | **Paving & Masonry Portfolio \| Recent Projects in Chicagoland** |
+| About | `About — Superb Paving & Masonry` | **About Superb Paving & Masonry \| Chicago, IL Contractor** |
+| Contact | `Contact — Superb Paving & Masonry` | **Free Estimate \| (773) 842-1700 \| Superb Paving, Chicago IL** |
 
 All under 65 characters. All lead with the keyword (transactional intent for local search).
 
@@ -62,7 +66,7 @@ Now: Each page has its own `og:title`, `og:description`, `og:image`, `og:url`, `
 
 ### MEDIUM — Geo meta tags
 
-Added `geo.region` (US-VA), `geo.placename` (Stafford), `geo.position` (lat/long), and `ICBM` — older standards but still consumed by some local directories and Apple Maps.
+Added `geo.region` (US-IL), `geo.placename` (Chicago), `geo.position` (lat/long), and `ICBM` — older standards but still consumed by some local directories and Apple Maps.
 
 ### MEDIUM — Sitemap upgraded
 
@@ -83,7 +87,7 @@ Sets the iOS Safari and Chrome Android browser chrome to ink-black to match the 
 
 ## What's still strong (no changes needed)
 
-- **NAP consistency:** Phone (703) 499-2258 and address "800 Corporate Dr, Suite 301, Stafford, VA 22554" identical across all 5 pages
+- **NAP consistency:** Phone (773) 842-1700 and address "180 N Stetson Ave, Suite 202, Chicago, IL 60601" identical across all 5 pages
 - **Image alt text:** Descriptive, contextual, not stuffed with keywords
 - **Internal linking:** 19 links to portfolio, 16 to contact, healthy mesh
 - **One H1 per page** — proper hierarchy
@@ -101,7 +105,7 @@ These can't be done from code — they require the business owner to act.
 
 The site can rank #1 on its own but **GBP is what gets you in the local map pack** (the 3-business box that shows above organic results for "paving contractor near me"). The owner should:
 
-1. Claim/verify GBP at https://business.google.com — search "Superb Paving Masonry Stafford VA"
+1. Claim/verify GBP at https://business.google.com — search "Superb Paving Masonry Chicago IL"
 2. Add the same NAP from the site (must match exactly)
 3. Upload 10-20 real project photos
 4. List every service from the site
@@ -119,17 +123,17 @@ Get the business listed on (with identical NAP):
 - Houzz (especially for masonry/outdoor living)
 - Nextdoor business profile
 - Yellow Pages, Bing Places, Apple Maps Connect
-- Local Chamber of Commerce (Stafford, Fredericksburg)
+- Local Chamber of Commerce (Chicagoland Chamber of Commerce, Evanston, Oak Park)
 
 Each citation that matches the on-site NAP is a trust signal for local rankings.
 
 ### HIGH — Service-area landing pages (next iteration)
 
-The site lists 12 service-area cities but doesn't have a dedicated page for each. For competitive markets, building out `/paving-stafford-va`, `/paving-fairfax-va`, `/paving-manassas-va` (or similar) with **unique content** for each city is how contractors capture "paving in [city]" searches.
+The site lists 12 service-area cities but doesn't have a dedicated page for each. For competitive markets, building out `/paving-chicago-il`, `/paving-evanston-il`, `/paving-naperville-il` (or similar) with **unique content** for each city is how contractors capture "paving in [city]" searches.
 
 **Warning:** Don't do this with thin duplicate content. Each page needs unique copy (60%+ unique) referencing local landmarks, projects done in that town, drive time from HQ, etc. Otherwise it's spam and Google will penalize.
 
-For 12 cities, we're at the quality-gate threshold — recommend doing 3-4 high-quality pages first (Stafford, Fredericksburg, Fairfax, Manassas) and seeing how they perform before expanding.
+For 12 cities, we're at the quality-gate threshold — recommend doing 3-4 high-quality pages first (Chicago, Evanston, Oak Park, Naperville) and seeing how they perform before expanding.
 
 ### MEDIUM — Reviews schema
 
@@ -137,7 +141,7 @@ Once GBP has 10+ reviews, we can add `AggregateRating` to the LocalBusiness sche
 
 ### MEDIUM — Real photography for SEO
 
-We're using the photos from their existing site (resized). Commissioned photos of recent completed projects with location captions ("Paver driveway in Great Falls, VA — completed April 2026") would be a meaningful ranking signal because they're indexed by Google Images and signal real local work.
+We're using the photos from their existing site (resized). Commissioned photos of recent completed projects with location captions ("Paver driveway in Evanston, IL — completed April 2026") would be a meaningful ranking signal because they're indexed by Google Images and signal real local work.
 
 ---
 

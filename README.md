@@ -1,10 +1,10 @@
 # Superb Paving & Masonry
 
-Website for **Superb Paving & Masonry** — paving and masonry contractor serving Stafford, VA and Northern Virginia.
+Website for **Superb Paving & Masonry** — paving and masonry contractor serving Chicago, IL and the surrounding suburbs.
 
-**Live phone:** (703) 499-2258
-**Office:** 800 Corporate Drive, Suite 301, Stafford, VA 22554
-**Email:** superbpavingandmasonry@gmail.com
+**Live phone:** (773) 842-1700
+**Office:** 180 North Stetson Avenue, Suite 202, Chicago, IL 60601
+**Email:** superbpavingillinois@gmail.com
 
 ## What's in this repo
 
@@ -19,9 +19,11 @@ Static HTML website. No build step. Deployable as-is from the repo root.
 ├── contact.html       Phone, email, office, service area, map
 ├── styles.css         Shared stylesheet
 ├── favicon.svg        Brand favicon
+├── apple-touch-icon.png  iOS home-screen icon (180x180)
 ├── sitemap.xml        Search engine sitemap (with image sitemap)
 ├── robots.txt         Crawler config
 ├── llms.txt           AI search optimization (ChatGPT, Perplexity, AI Overviews)
+├── verify.py          Invariant check — run after any content edit
 ├── img/               Photography
 └── docs/
     ├── DESIGN-REPORT.md   Design review findings + fixes
@@ -65,6 +67,17 @@ Everything is plain HTML and CSS. Open the file, change the text or the photo pa
 
 To swap a photo, replace the file in `img/` (keep the same filename) or update the `<img src="...">` reference in the HTML.
 
+After any content edit, run the invariant check:
+
+```bash
+python3 verify.py
+```
+
+It fails if the phone, email, address, service area, or JSON-LD drift between
+pages, if a title or meta description breaks its SERP length limit, or if any
+image or stylesheet reference points at a file that isn't there. No
+dependencies — it only needs Python 3.
+
 ## Design system
 
 CSS custom properties at the top of `styles.css` drive the entire palette and type system. Change one variable, the whole site shifts.
@@ -83,4 +96,4 @@ Two things only the business owner can do (see `docs/SEO-REPORT.md` for full det
 
 ---
 
-© 2026 Superb Paving & Masonry. Stafford, Virginia.
+© 2026 Superb Paving & Masonry. Chicago, Illinois.
