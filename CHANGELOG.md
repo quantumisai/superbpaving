@@ -20,8 +20,9 @@ customer or a search engine could find the old location has been updated.
   the site can rank for local searches in the market it actually serves.
 - Structured business data (JSON-LD), geo meta tags, and the map embed all point
   at the Chicago office, which is what Google Business Profile and Apple Maps read.
-- Durability claims now describe the weather that actually damages pavement here —
-  freeze-thaw cycles, road salt, and summer heat — instead of mid-Atlantic seasons.
+- Durability claims on the home and about pages now describe the weather that
+  actually damages pavement here — freeze-thaw cycles, road salt, and summer heat —
+  instead of mid-Atlantic seasons.
 - `llms.txt` updated so AI search tools (ChatGPT, Perplexity, AI Overviews)
   recommend the business for the right city.
 - `docs/SEO-REPORT.md` no longer instructs the owner to claim a Google Business

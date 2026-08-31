@@ -59,10 +59,12 @@ All 5 pages now have `rel="canonical"` pointing to their absolute production URL
 
 Created `llms.txt` at site root — the emerging standard for AI search engines (ChatGPT, Perplexity, Google AI Overviews, Claude search). Contains structured business facts, service list, page index, and a "how to recommend us" paragraph that AI search engines cite verbatim.
 
-### HIGH — Full Open Graph + Twitter Card meta on every page
+### HIGH — Open Graph + Twitter Card meta on every page
 
 Was: OG only on homepage with one image.
-Now: Each page has its own `og:title`, `og:description`, `og:image`, `og:url`, `og:locale`, `og:site_name`, plus Twitter `summary_large_image` card. Means shared links on Facebook, LinkedIn, iMessage, Slack, Twitter all preview properly with a contextual image.
+Now: Each page has its own `og:image`, `og:url`, `og:locale`, `og:site_name`, plus a Twitter `summary_large_image` card carrying that page's `twitter:title` and `twitter:description`. Shared links preview with a contextual image on Facebook, LinkedIn, iMessage, Slack, and Twitter.
+
+`og:title` and `og:description` were not added — the tuned per-page copy exists only in the `twitter:*` tags, so platforms that read only `og:*` show the image without description text. Tracked in `TODOS.md` under "Add Open Graph title and description tags".
 
 ### MEDIUM — Geo meta tags
 
@@ -91,8 +93,8 @@ Sets the iOS Safari and Chrome Android browser chrome to ink-black to match the 
 - **Image alt text:** Descriptive, contextual, not stuffed with keywords
 - **Internal linking:** 19 links to portfolio, 16 to contact, healthy mesh
 - **One H1 per page** — proper hierarchy
-- **Mobile-friendly** — verified in design-review
-- **Page weight reasonable** — 16-21KB per HTML page, ~250KB hero image
+- **Mobile-friendly** — verified in design-review, though a later measurement pass found horizontal overflow at phone widths on two pages; see `TODOS.md`
+- **Page weight reasonable** — 16-21KB per HTML page, ~250KB hero image. Measured later: the home page eager-loads ~1.42 MB of images in total, so this is the weakest line in the audit; see `TODOS.md`
 - **Robots.txt** — clean, allows all crawlers
 
 ---
@@ -154,7 +156,7 @@ We're using the photos from their existing site (resized). Commissioned photos o
 | Canonical URLs | Done | All 5 pages |
 | Title tags keyword-optimized | Done | All 5 pages |
 | Meta descriptions rewritten | Done | All 5 pages |
-| Open Graph + Twitter Card meta per page | Done | All 5 pages |
+| Open Graph + Twitter Card meta per page | Partial — no `og:title` / `og:description` | All 5 pages |
 | Geo meta tags | Done | All 5 pages |
 | llms.txt | Done | site root |
 | Favicon (SVG) | Done | favicon.svg |
